@@ -1,0 +1,14 @@
+
+\begin{tikzpicture}[yscale=1,xscale=1,line width=0.8pt]
+    \draw (0,0) rectangle (4,2);
+    \draw[->,>=Stealth] (2,1)--(6,3)node[above=2.5pt,right=2.5pt]{$F$};
+
+	\draw[->,>=Stealth,dashed] (2,1)--(2,3)node[above=2.5pt,right=2.5pt]{$F_{\text{垂直}}$};
+
+    \draw[->,>=Stealth,dashed] (2,1)--(6,1)node[above=2.5pt,right=2.5pt]{$F_{\text{平行}}$};
+
+    \coordinate (O) at (2,1);
+    \coordinate (A) at (3,1.5);
+    \coordinate (B) at (3,1);
+    \draw pic["$\varphi$",draw,angle radius=1cm,angle eccentricity=1.4] {angle = B--O--A};
+\end{tikzpicture}

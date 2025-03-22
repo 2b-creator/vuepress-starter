@@ -1,0 +1,27 @@
+\tdplotsetmaincoords{60}{70}
+
+\begin{tikzpicture}[yscale=1.5,xscale=1.5,line width=0.8pt,tdplot_main_coords]
+	\coordinate (A) at (0,0,0);
+	\coordinate (B) at (4,0,0);
+	\coordinate (C) at (4,3,0);
+	\coordinate (D) at (0,3,0);
+	\coordinate (O) at (0.5,0.5,2);
+	
+	\coordinate (P) at (3.5,2.5,0);
+	\coordinate (P1) at (0.5,0.5,0);
+	\coordinate (P2) at (2.5,0.5,0);
+	\coordinate (P3) at (0.5,2,0);
+	\coordinate (P3t) at (0.5,2.5,0);
+	\coordinate (P2t) at (3.5,0.5,0);
+	
+	
+	\draw[rounded corners=0.05pt](A)--(B)--(C)--(D)--(A);
+	
+	\draw[->,>=Stealth](O)node[above=3.5pt,right=3pt]{$O$}--(P)node[above=2.5pt,right=2.5pt]{$P$};
+	\draw[->,>=Stealth](O)--(P1)node[above=2.5pt,left=1.5pt]{$P_1$};
+	\draw[->,>=Stealth](P1)--(P2)node[above=2.5pt,right=2.5pt]{$P_2$};
+	\draw[->,>=Stealth](P1)--(P3)node[right=2.5pt]{$P_3$};
+	\draw[dashed](P1)--(P3t)--(P)--(P2t)--(P1);
+	\draw[->,>=Stealth](P1)--(P);
+	%\draw(P)node[above=3.5pt,right=3pt]{$P$};
+\end{tikzpicture}
