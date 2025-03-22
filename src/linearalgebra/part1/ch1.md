@@ -162,9 +162,21 @@ $$
 
 ::: info 定义：0 向量
 
-若 $\alpha,\beta \in \mathbb{F}^n$ 且 $\alpha+\beta = \alpha$ ，那么 $\beta$ 为空间 $\mathbb{F}^n$ 的单位元，我们将其称为0向量，显然0向量就是一个全是由0组成的 $n$ 元组，记作 $\boldsymbol{0}$ \footnote{实际上是以粗体形式出现的0}，那么
+若 $\alpha,\beta \in \mathbb{F}^n$ 且 $\alpha+\beta = \alpha$ ，那么 $\beta$ 为空间 $\mathbb{F}^n$ 的单位元，我们将其称为0向量，显然0向量就是一个全是由0组成的 $n$ 元组，记作 $\boldsymbol{0}$ (实际上是以粗体形式出现的0)，那么
 $$
 \boldsymbol{0}=(0,0,0,\cdots,0)
 $$
 
+:::
+
+### 加法逆元
+
+类似于标量加法的 $x,y\in \mathbb{C},x+y=0$ ，其中标量0表示标量加法的单位元，其中 $y=-x$ ，那么在空间 $\mathbb{F}^n$ 中同样表示若 $\alpha,\beta \in \mathbb{F}^n,\alpha+\beta=\boldsymbol{0}$ ， $\beta=-\alpha$ 表示 $\alpha$ 的加法逆元。
+
+::: info 定义：加法逆元
+对于 $\alpha \in \mathbb{F}^n$ ， $\alpha$ 的加法逆元表示满足下面条件的向量 $-\alpha\in \mathbb{F}^n$ 有
+$$
+\alpha+(-\alpha)=\boldsymbol{0}
+$$
+换而言之当 $\alpha=(a,b,c,d,\cdots)$ 时， $-\alpha=(-a,-b,-c,-d,\cdots)$ 
 :::
