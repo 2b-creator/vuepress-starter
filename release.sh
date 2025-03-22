@@ -1,0 +1,1 @@
+cp -r ./src/.vuepress/dist /www/wwwroot/linearalgebra.jsut.site/

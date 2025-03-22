@@ -1,0 +1,22 @@
+{
+  "name": "linear-algebrea-vuepress",
+  "description": "My linear-algebra docs",
+  "version": "2.0.0",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress-vite build src",
+    "docs:release": "vuepress-vite build src && cp -r ./src/.vuepress/dist /www/wwwroot/linearalgebra.jsut.site/",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "2.0.0-rc.20",
+    "mathjax-full": "^3.2.2",
+    "sass-embedded": "^1.85.1",
+    "vue": "^3.5.13",
+    "vuepress": "2.0.0-rc.20",
+    "vuepress-theme-hope": "2.0.0-rc.74"
+  }
+}
